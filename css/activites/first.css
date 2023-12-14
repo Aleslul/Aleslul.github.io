@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Raleway:wght@100;200;300;400&display=swap');
+:root{
+    --navbar-background: #454b2a;
+    --texto-claro: #fff;
+    --texto-oscuro: #000000;
+    --complementary-medium: #52A80F;
+    --complementary-light: #5e6a2f;
+    --footer-color: #d4d2b1;
+}
+
+/* TODO
+font-family: 'Raleway', sans-serif;
+font-family: 'Cabin', sans-serif;   
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* *NAVBAR */
+
+.navbar {
+    background-color: var(--navbar-background);
+    opacity: 0.93;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    padding: 10px 50px;
+}
+
+.navbar .name_page {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--texto-claro);
+    user-select: none;
+    cursor: pointer;
+}
+
+.navbar .icons {
+    width: 150px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.icons #facebook{
+    font-size: 2rem;
+    color: var(--texto-claro);
+    cursor: pointer;
+}
+
+.icons #instagram{
+    font-size: 2rem;
+    color: var(--texto-claro);
+    cursor: pointer;
+}
+
+.icons #whatsapp{
+    font-size: 2rem;
+    color: var(--texto-claro);
+    cursor: pointer;
+}

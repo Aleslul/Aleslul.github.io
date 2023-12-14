@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Raleway:wght@100;200;300;400&display=swap');
+:root{
+    --navbar-background: #454b2a;
+    --texto-claro: #fff;
+    --texto-oscuro: #000000;
+    --complementary-medium: #52A80F;
+    --complementary-light: #5e6a2f;
+    --footer-color: #d4d2b1;
+}
+
+/* TODO
+font-family: 'Raleway', sans-serif;
+font-family: 'Cabin', sans-serif;   
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* *NAVBAR */
+
+.navbar {
+    background-color: var(--navbar-background);
+    opacity: 0.93;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    padding: 10px 50px;
+}
+
+.navbar .name_page {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--texto-claro);
+    user-select: none;
+    cursor: pointer;
+}
+
+.navbar .icons {
+    width: 150px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.icons #facebook{
+    font-size: 2rem;
+    color: var(--texto-claro);
+    cursor: pointer;
+}
+
+.icons #instagram{
+    font-size: 2rem;
+    color: var(--texto-claro);
+    cursor: pointer;
+}
+
+.icons #whatsapp{
+    font-size: 2rem;
+    color: var(--texto-claro);
+    cursor: pointer;
+}
+
+/* TODO MAIN */
+
+.intro{
+    background-image: url(/images/1.png);
+    top: 0;
+    background-size: cover;
+    width: 100%;
+    height: 890px; /* ! 470px */
+    padding: 200px;
+}
+
+.intro .info-intro{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+.info-intro .title{
+    font-family: 'Cabin', sans-serif;   
+    font-weight:800;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: var(--texto-oscuro);
+}
+
+.info-intro .subtitle{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: var(--texto-oscuro);  
+}
+
+.info-intro .contact_us{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    color: var(--texto-claro);
+    width: 150px;
+    height: 55px;
+    padding: 5px;
+    border: none;
+    background-color: var(--complementary-light);
+    border-radius: 8px;
+}
+
+.info-intro .contact_us:hover{
+    background-color: var(--navbar-background);
+}
+
+
+.about-us{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: auto;
+    padding: 80px 200px;
+}
+
+.about-us .span-container{
+    width: 1020px;
+    height: auto;
+}   
+
+.about-us .about-us-span{
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+.activities{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 200px;
+}
+
+.activities .span-container{
+    margin-bottom: 30px;
+}
+
+.span-container span{
+    font-family: 'Cabin', sans-serif; 
+    font-size: 2.5rem;
+    font-weight: 800;
+    user-select: none;
+}
+
+.activities .grid-activity{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    grid-template-rows: 1fr;
+    gap: 40px;
+}
+
+.grid-activity .activity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity img{
+    border-radius: 20px;
+    width: 470px;
+    height: 470px;
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+.activity img:hover{
+    box-shadow: 3px 3px 8px var(--navbar-background);
+}
+
+.activity .title{
+    font-family: 'Cabin', sans-serif;   
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+.activity .subtitle{
+    text-align: center;
+    line-height: 1.6rem;
+    width: 400px;
+    height: 80px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+.activity .more-info{
+    background-color: var(--complementary-light);
+    color: var(--texto-claro);
+    border: none;
+    border-radius: 10px;
+    width: 105px;
+    height: 45px;
+    user-select: none;
+}
+.activity .more-info:hover{
+    background-color: var(--navbar-background);
+}
+
+.galery-container{
+    width: 100%;
+    height: auto;
+    padding: 80px 200px;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+.galery-container .galery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: auto;
+    height: auto;
+    gap: 40px;
+}
+
+.galery .img-galery img{
+    border-radius: 20px;
+    width: 470px;
+    height: 470px;
+}
+
+.map-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 120px;
+}
+
+.map-container .map{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.map .map-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.map-text .title{
+    font-family: 'Cabin', sans-serif;   
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.map-text .subtitle{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.map .google-map iframe{
+    border-radius: 20px;
+}
+/* *FOOTER */
+
+.footer-container{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 240px;
+    background-color: var(--footer-color);
+    padding: 80px;
+}
+
+.footer-container .title{
+    font-family: 'Cabin', sans-serif;   
+    font-size: 2rem;
+    font-weight: 700;
+    user-select: none;
+    cursor: pointer;
+}
+
+.footer-container .cosas{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cosas .logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.cosas .derechos{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.logos ion-icon{
+    font-size: 3rem;
+}
